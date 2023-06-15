@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tim gia tri trong mang</title>
+</head>
+<body>
+<input type="number" id="number">
+<input type="submit" onclick="search()" value="Search">
+</body>
+<script>
+    function search() {
+        let number = document.getElementById("number").value;
+        let arr = [12, 13, 11, 0, 5, 4, 22];
+        let flag = 0;
+        for (let i = 0; i < arr.length; i++) {
+            if (number == arr[i]) {
+                flag = 1;}
+        }
+        if (flag > 0) {
+            document.write(number + "xuat hien trong mang");
+        } else {
+            document.write(number + "khong xuat hien trong mang");
+        }
+    }
+</script>
+</html>
